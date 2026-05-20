@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dyutiman Bharadwaj | Portfolio</title>
+  <meta name="description" content="Portfolio of Dyutiman Bharadwaj — Software Developer, AI/ML & Data Science."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:ital,wght@0,700;0,800;1,700;1,800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- LOADING -->
+<div id="loading-screen">
+  <div class="load-content">
+    <div class="load-text">LOADING...</div>
+    <div class="load-pct-box"><span id="load-pct">0%</span></div>
+    <div class="load-bar-wrap"><div id="load-bar" class="load-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- SCENERY BACKGROUND -->
+<div class="scenery-wrap">
+  <div class="s-sun"></div>
+  <div class="s-cloud c1">
+    <svg viewBox="0 0 120 70"><path d="M30,60 a20,20 0 0,1 0,-40 a25,25 0 0,1 45,-10 a20,20 0 0,1 25,25 a15,15 0 0,1 -10,25 z" fill="#fff" stroke="#111" stroke-width="4" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="s-cloud c2">
+    <svg viewBox="0 0 120 70"><path d="M30,60 a20,20 0 0,1 0,-40 a25,25 0 0,1 45,-10 a20,20 0 0,1 25,25 a15,15 0 0,1 -10,25 z" fill="#fff" stroke="#111" stroke-width="4" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="s-cloud c3">
+    <svg viewBox="0 0 120 70"><path d="M30,60 a20,20 0 0,1 0,-40 a25,25 0 0,1 45,-10 a20,20 0 0,1 25,25 a15,15 0 0,1 -10,25 z" fill="#fff" stroke="#111" stroke-width="4" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="s-cloud c4">
+    <svg viewBox="0 0 120 70"><path d="M30,60 a20,20 0 0,1 0,-40 a25,25 0 0,1 45,-10 a20,20 0 0,1 25,25 a15,15 0 0,1 -10,25 z" fill="#fff" stroke="#111" stroke-width="4" stroke-linejoin="round"/></svg>
+  </div>
+
+  <div class="m-shape m1"></div>
+  <div class="m-shape m2"></div>
+  <div class="m-shape m3"></div>
+
+  <div class="s-ground">
+    <div class="s-river">
+      <div class="s-wave w1"></div>
+      <div class="s-wave w2"></div>
+      <div class="s-wave w3"></div>
+      <div class="s-wave w4"></div>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <span class="nav-brand">PORTFOLIO</span>
+    <div class="nav-links-desktop">
+      <a href="#about"      class="nav-lnk">ABOUT</a>
+      <a href="#education"  class="nav-lnk">EDUCATION</a>
+      <a href="#skills"     class="nav-lnk">SKILLS</a>
+      <a href="#projects"   class="nav-lnk">PROJECTS</a>
+      <a href="#extras"     class="nav-lnk">EXTRA-CURRICULARS</a>
+      <a href="#contact"    class="nav-lnk nav-lnk-contact">CONTACT</a>
+    </div>
+    <div class="nav-date" id="nav-date"></div>
+    <button class="ham-btn" id="ham-btn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <!-- Mobile Menu -->
+  <div class="mob-menu" id="mob-menu">
+    <a href="#about"     class="mob-lnk">ABOUT</a>
+    <a href="#education" class="mob-lnk">EDUCATION</a>
+    <a href="#skills"    class="mob-lnk">SKILLS</a>
+    <a href="#projects"  class="mob-lnk">PROJECTS</a>
+    <a href="#extras"    class="mob-lnk">EXTRA-CURRICULARS</a>
+    <a href="#contact"   class="mob-lnk mob-contact">CONTACT</a>
+    <div class="mob-date" id="mob-date"></div>
+    <a href="#contact" class="mob-contact-btn">✉ CONTACT ME</a>
+    <div class="mob-soc-row">
+      <a href="https://github.com/dyutimanbharadwaj" target="_blank" class="mob-soc">GH</a>
+      <a href="https://linkedin.com/in/dyutiman-bharadwaj" target="_blank" class="mob-soc">in</a>
+      <a href="#" class="mob-soc">&lt;/&gt;</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ── HERO ── -->
+  <section id="about" class="section">
+    <div class="hero-grid">
+
+      <!-- Profile Card -->
+      <div class="profile-card card">
+        <div class="photo-wrap">
+          <div class="photo-ring">
+            <div class="photo-circle">
+              <img src="photo.jpg" alt="Dyutiman Bharadwaj" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+              <span class="initials" style="display:none">DB</span>
+            </div>
+          </div>
+          <div class="tape"></div>
+        </div>
+        <h1 class="p-name">DYUTIMAN<br/>BHARADWAJ</h1>
+        <div class="role-badge">SOFTWARE_DEVELOPER()</div>
+        <hr class="p-divider"/>
+        <div class="p-tags">
+          <div class="tag-row"><span class="tag ty">[ LOCATION ]</span><span class="tag-val">GUWAHATI, ASSAM</span></div>
+          <div class="tag-row"><span class="tag tg">[ STATUS ]</span><span class="tag-val">INTEGRATED MTECH STUDENT</span></div>
+          <div class="tag-row"><span class="tag tb">[ MISSION ]</span><span class="tag-val">Code. Build. Innovate.</span></div>
+        </div>
+        <div class="p-btns">
+          <a href="#" class="btn btn-green" id="resume-btn">⬇ DOWNLOAD_RESUME</a>
+          <a href="#contact" class="btn btn-red">✉ CONTACT ME</a>
+        </div>
+        <div class="p-socials">
+          <a href="https://github.com/dyutimanbharadwaj" target="_blank" class="soc-ico" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/dyutiman-bharadwaj" target="_blank" class="soc-ico" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" class="soc-ico" title="Dev">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M8.156 2.835l-5.8 8.165 5.8 8.17 1.844-1.32-4.9-6.85 4.9-6.845zM15.844 2.835l-1.844 1.32 4.9 6.845-4.9 6.85 1.844 1.32 5.8-8.17z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right col -->
+      <div class="hero-right">
+        <div class="about-card">
+          <h2 class="about-h">Hi people! 👋</h2>
+          <p class="about-p">I am a <span class="hl">Integrated MTech student at VIT Bhopal</span>, pursuing Computer Science and Engineering with a CGPA of <strong>9.06/10.0</strong>. I define myself as an <span class="hl">AI/ML &amp; Data Science</span> developer passionate about building impactful, scalable software.</p>
+          <p class="about-p">I have a research publication in NLP, internship experience across fintech, space tech, and energy sectors, and a strong aptitude for solving complex, real-world problems.</p>
+          <button class="open-to-btn">🚀 Open to Software and Research Internships</button>
+        </div>
+        <!-- Terminal -->
+        <div class="terminal">
+          <div class="term-hdr">
+            <span class="tdot tred"></span><span class="tdot tyel"></span><span class="tdot tgrn"></span>
+            <span class="term-ttl">root@dyutiman:~</span>
+          </div>
+          <div class="term-body" id="term-body">
+            <div class="tl">DyutimanOS v1.0.0 (tty1)</div>
+            <div class="tl">Type <span class="tc">"help"</span> to see available commands.</div>
+            <div id="term-out"></div>
+            <div class="term-in-row">
+              <span class="tprompt">guest@dyutiman:~$&nbsp;</span>
+              <input id="term-in" class="term-in" type="text" autocomplete="off" spellcheck="false" placeholder="type a command..."/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── EXPERIENCE BOX ── -->
+  <div class="section-box box-orange">
+    <div class="box-pill">EXPERIENCE 💼</div>
+    <section id="experience" class="section">
+      <div class="exp-list">
+
+        <div class="exp-card card-white reveal">
+          <div class="exp-top">
+            <img src="logo_ongc.png" alt="ONGC Logo" class="exp-logo"/>
+            <div class="exp-info">
+              <h3 class="exp-role">Summer Intern (SDE)</h3>
+              <div class="exp-co">Oil &amp; Natural Gas Corporation (ONGC)</div>
+              <div class="exp-meta">
+                <span class="exp-date">May 2026 – Present</span>
+                <span class="badge-onsite">On-site</span>
+                <span class="exp-loc">Dehradun, Uttarakhand</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card card-white reveal">
+          <div class="exp-top">
+            <img src="logo_assistflow.png" alt="AssistFlow Logo" class="exp-logo"/>
+            <div class="exp-info">
+              <h3 class="exp-role">Backend Intern</h3>
+              <div class="exp-co">AssistFlow</div>
+              <div class="exp-meta">
+                <span class="exp-date">Mar 2026 – Present</span>
+                <span class="badge-remote">Remote</span>
+                <span class="exp-loc">New Delhi, India</span>
+              </div>
+            </div>
+          </div>
+          <ul class="exp-bul">
+            <li>Developing backend services and REST APIs for scalable applications</li>
+            <li>Designing and optimizing database schemas for efficient data handling</li>
+          </ul>
+          <div class="chips"><span class="chip">REST APIs</span><span class="chip">Node.js</span><span class="chip">Database Design</span></div>
+        </div>
+
+        <div class="exp-card card-white reveal">
+          <div class="exp-top">
+            <img src="logo_bluestock.png" alt="Bluestock Logo" class="exp-logo"/>
+            <div class="exp-info">
+              <h3 class="exp-role">Software Development Engineer Intern</h3>
+              <div class="exp-co">Bluestock Fintech</div>
+              <div class="exp-meta">
+                <span class="exp-date">Oct – Nov 2025</span>
+                <span class="badge-remote">Remote</span>
+                <span class="exp-loc">Mumbai, Maharashtra</span>
+              </div>
+            </div>
+          </div>
+          <ul class="exp-bul">
+            <li>Engineered 3+ backend features &amp; integrated 2 major financial APIs, boosting data processing efficiency by 15% and retrieval speeds by 20%</li>
+            <li>Championed code quality via rigorous code reviews, reducing post-deployment bugs by 10% and ensuring 90%+ test coverage</li>
+          </ul>
+          <div class="chips"><span class="chip">REST APIs</span><span class="chip">Machine Learning</span><span class="chip">Fintech</span></div>
+        </div>
+
+        <div class="exp-card card-white reveal">
+          <div class="exp-top">
+            <img src="logo_indiaspace.png" alt="India Space Academy Logo" class="exp-logo"/>
+            <div class="exp-info">
+              <h3 class="exp-role">Remote Sensing &amp; GIS Intern</h3>
+              <div class="exp-co">India Space Academy</div>
+              <div class="exp-meta">
+                <span class="exp-date">Jul – Aug 2025</span>
+                <span class="badge-remote">Remote</span>
+                <span class="exp-loc">New Delhi, India</span>
+              </div>
+            </div>
+          </div>
+          <ul class="exp-bul">
+            <li>Spearheaded geospatial analysis with Python &amp; QGIS on multi-spectral satellite data, enhancing accuracy by 15%+</li>
+            <li>Built an NDWI-based workflow to automate water body extraction, cutting manual analysis time by 30%</li>
+          </ul>
+          <div class="chips"><span class="chip">Python</span><span class="chip">QGIS</span><span class="chip">GIS</span><span class="chip">Remote Sensing</span></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ── SKILLS BOX ── -->
+  <div class="section-box box-pink">
+    <div class="box-pill">SKILLS 🛠</div>
+    <section id="skills" class="section">
+      <div class="skills-grid">
+        <div class="skill-group card-white reveal">
+          <h3 class="sg-title">Languages &amp; Core</h3>
+          <div class="chips"><span class="chip ch-y">Python</span><span class="chip ch-y">SQL</span><span class="chip ch-y">C++</span><span class="chip ch-y">JavaScript</span><span class="chip ch-y">HTML/CSS</span></div>
+        </div>
+        <div class="skill-group card-white reveal">
+          <h3 class="sg-title">AI / ML / Data</h3>
+          <div class="chips"><span class="chip ch-g">TensorFlow</span><span class="chip ch-g">Keras</span><span class="chip ch-g">Scikit-Learn</span><span class="chip ch-g">HuggingFace</span><span class="chip ch-g">NLTK</span><span class="chip ch-g">OpenCV</span><span class="chip ch-g">NumPy</span><span class="chip ch-g">Pandas</span></div>
+        </div>
+        <div class="skill-group card-white reveal">
+          <h3 class="sg-title">Web &amp; Backend</h3>
+          <div class="chips"><span class="chip ch-b">React.js</span><span class="chip ch-b">Node.js</span><span class="chip ch-b">Streamlit</span><span class="chip ch-b">Flask</span><span class="chip ch-b">REST APIs</span><span class="chip ch-b">Tailwind CSS</span></div>
+        </div>
+        <div class="skill-group card-white reveal">
+          <h3 class="sg-title">Tools &amp; Platforms</h3>
+          <div class="chips"><span class="chip ch-p">Git</span><span class="chip ch-p">Docker</span><span class="chip ch-p">AWS</span><span class="chip ch-p">QGIS</span><span class="chip ch-p">Tableau</span></div>
+        </div>
+        <div class="skill-group card-white reveal">
+          <h3 class="sg-title">Languages (Human)</h3>
+          <div class="chips"><span class="chip ch-r">English (Native)</span><span class="chip ch-r">Hindi (Native)</span><span class="chip ch-r">Spanish (Beginner)</span></div>
+        </div>
+        <div class="skill-group card-white reveal">
+          <h3 class="sg-title">Certifications 🏅</h3>
+          <ul class="cert-list">
+            <li>Data Analytics Job Simulation — Deloitte</li>
+            <li>Cloud Computing Certification — NPTEL</li>
+            <li>Cloud Computing &amp; ML Badges — AWS Educate</li>
+            <li>Advanced Database Management — Udemy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ── PROJECTS BOX ── -->
+  <div class="section-box box-purple">
+    <div class="box-pill">PROJECTS 🚀</div>
+    <section id="projects" class="section">
+      <div class="proj-grid">
+
+        <div class="proj-card card-white reveal">
+          <div class="proj-emo">🧾</div>
+          <h3 class="proj-title">Invoice Triage Environment</h3>
+          <p class="proj-desc">AI-driven RL environment where an agent acts as an AP Analyst — deciding to pay, reject, or flag invoices for fraud. Like a flight simulator, but for accounting AI.</p>
+          <div class="chips"><span class="chip">Python</span><span class="chip">Reinforcement Learning</span><span class="chip">HuggingFace</span></div>
+          <div class="proj-links"><a href="#" class="proj-btn">GitHub →</a><a href="#" class="proj-btn proj-demo">Live ↗</a></div>
+        </div>
+
+        <div class="proj-card card-white reveal">
+          <div class="proj-emo">🔍</div>
+          <h3 class="proj-title">Production RAG System</h3>
+          <p class="proj-desc">Domain-specific "Ask My Docs" system with hybrid retrieval (BM25 + vector), cross-encoder reranking, citation enforcement, Langfuse observability &amp; RAGAS evaluation.</p>
+          <div class="chips"><span class="chip">Python</span><span class="chip">BM25</span><span class="chip">LangFuse</span><span class="chip">RAGAS</span></div>
+          <div class="proj-links"><a href="#" class="proj-btn">GitHub →</a></div>
+        </div>
+
+        <div class="proj-card card-white reveal">
+          <div class="proj-emo">🏥</div>
+          <h3 class="proj-title">ArogyaConnect</h3>
+          <p class="proj-desc">AI-driven teleconsultation &amp; triage system acting as a Clinical Coordinator. Groq-powered LLM processes patient symptoms and manages real-time doctor queues.</p>
+          <div class="chips"><span class="chip">Groq</span><span class="chip">LLM</span><span class="chip">Healthcare AI</span></div>
+          <div class="proj-links"><a href="#" class="proj-btn">GitHub →</a><a href="#" class="proj-btn proj-demo">Live ↗</a></div>
+        </div>
+
+        <div class="proj-card card-white reveal">
+          <div class="proj-emo">🌐</div>
+          <h3 class="proj-title">AI Language Translator</h3>
+          <p class="proj-desc">High-performance translation model for 200+ languages using HuggingFace, achieving 95% accuracy. Published in peer-reviewed journal (Impact Factor: 8.536).</p>
+          <div class="chips"><span class="chip">Python</span><span class="chip">HuggingFace</span><span class="chip">Streamlit</span><span class="chip">Flask</span></div>
+          <div class="proj-links"><a href="#" class="proj-btn">GitHub →</a><span class="pub-badge">📄 Published</span></div>
+        </div>
+
+        <div class="proj-card card-white reveal">
+          <div class="proj-emo">💬</div>
+          <h3 class="proj-title">Intelligent Sentiment Analysis</h3>
+          <p class="proj-desc">Sentiment and spam detection model with 92% accuracy on 50,000+ comments — modular architecture cutting new classifier integration time by 50%.</p>
+          <div class="chips"><span class="chip">Python</span><span class="chip">Scikit-Learn</span><span class="chip">NLTK</span><span class="chip">NLP</span></div>
+          <div class="proj-links"><a href="#" class="proj-btn">GitHub →</a></div>
+        </div>
+
+        <div class="proj-card card-white reveal">
+          <div class="proj-emo">🫁</div>
+          <h3 class="proj-title">Medical Image Classification</h3>
+          <p class="proj-desc">High-precision diagnostic model achieving 98% accuracy using transfer learning with a fine-tuned VGG16 architecture, significantly improving anomaly detection.</p>
+          <div class="chips"><span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">VGG16</span><span class="chip">OpenCV</span></div>
+          <div class="proj-links"><a href="#" class="proj-btn">GitHub →</a></div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ── EXTRA-CURRICULARS BOX ── -->
+  <div class="section-box box-cyan">
+    <div class="box-pill">EXTRA-CURRICULARS 🎯</div>
+    <section id="extras" class="section">
+      <div class="extras-grid">
+
+        <div class="extra-card card-white reveal">
+          <div class="extra-emo">🎤</div>
+          <h3 class="extra-role">Head of Social Media, PR &amp; Speaker Outreach</h3>
+          <div class="extra-org">TEDxVITBhopal</div>
+          <div class="extra-date">Aug 2025 – Present</div>
+          <ul class="extra-bul">
+            <li>Led social media strategy for Instagram &amp; LinkedIn</li>
+            <li>Boosted community engagement by 30% through targeted content</li>
+            <li>Expanded event reach via strategic media outreach</li>
+          </ul>
+        </div>
+
+        <div class="extra-card card-white reveal">
+          <div class="extra-emo">❤️</div>
+          <h3 class="extra-role">Fundraising &amp; Outreach Intern</h3>
+          <div class="extra-org">Muskurahat Foundation</div>
+          <div class="extra-date">Sep – Oct 2025</div>
+          <ul class="extra-bul">
+            <li>Led fundraising campaigns across 3+ platforms, reaching 500+ individuals</li>
+            <li>Increased supporter engagement by 20% for child welfare initiatives</li>
+            <li>Tutored 150+ children (grades 1–3) in English and Mathematics</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ── PUBLICATIONS BOX ── -->
+  <div class="section-box box-blue">
+    <div class="box-pill">PUBLICATIONS 📖</div>
+    <section id="publications" class="section">
+      <div class="pub-card card-white reveal">
+        <div class="pub-emo">📄</div>
+        <div class="pub-body">
+          <h3 class="pub-title">Multilingual Machine Translation Using Hugging Face Models for AI-Powered Language Translation to Decode the World's Voices in Real-Time</h3>
+          <div class="pub-journal">International Journal of All Research Education &amp; Scientific Methods</div>
+          <div class="pub-date">December 20, 2024 &nbsp;·&nbsp; Impact Factor: 8.536</div>
+          <a href="#" class="pub-btn">Show Publication ↗</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- ── EDUCATION BOX ── -->
+  <div class="section-box box-green">
+    <div class="box-pill">EDUCATION 🎨</div>
+    <section id="education" class="section">
+      <div class="edu-layout">
+        <div class="edu-cards">
+          <div class="edu-entry reveal">
+            <div class="edu-yr-tag">2023–2028</div>
+            <div class="edu-inner card-white">
+              <h3 class="edu-degree">Integrated MTech CSE</h3>
+              <div class="edu-inst">Vellore Institute of Technology, Bhopal</div>
+              <ul class="edu-bullets">
+                <li>CGPA: <strong>9.06 / 10.0</strong></li>
+                <li>Relevant Coursework: DSA, OOP, DBMS, OS, Data Science</li>
+                <li>Focus: AI/ML &amp; Full Stack Development</li>
+              </ul>
+            </div>
+          </div>
+          <div class="edu-entry reveal">
+            <div class="edu-yr-tag">XII</div>
+            <div class="edu-inner card-white">
+              <h3 class="edu-degree">Senior Secondary</h3>
+              <div class="edu-inst">SBOA High School, Chennai</div>
+              <div class="edu-score-pill">CBSE Board | Percentage: 94%</div>
+            </div>
+          </div>
+          <div class="edu-entry reveal">
+            <div class="edu-yr-tag">X</div>
+            <div class="edu-inner card-white">
+              <h3 class="edu-degree">Secondary Education</h3>
+              <div class="edu-inst">SBOA High School, Chennai</div>
+              <div class="edu-score-pill">CBSE Board | Percentage: 96%</div>
+            </div>
+          </div>
+        </div>
+        <div class="doodle-col">
+          <div class="doodle-toolbar">
+            <button class="dtool active" id="dtool-pen" title="Pen">✏️</button>
+            <button class="dtool" id="dtool-marker" title="Marker">🖊️</button>
+            <button class="dtool" id="dtool-eraser" title="Eraser">🩹</button>
+            <button class="dtool" id="dtool-clear" title="Clear">🗑️</button>
+          </div>
+          <canvas id="doodle-canvas" class="doodle-canvas"></canvas>
+        </div>
+      </div>
+      <div class="edu-hint">✨ Bored? Doodle something cool!</div>
+    </section>
+  </div>
+
+  <!-- ── CONTACT BOX ── -->
+  <div class="section-box box-yellow">
+    <div class="box-pill">CONTACT 📬</div>
+    <section id="contact" class="section">
+      <div class="contact-grid">
+
+        <div class="contact-info card-white reveal">
+          <h3 class="contact-sub">Let's Connect</h3>
+          <div class="c-item"><span>✉</span><a href="mailto:dyutiman2003@gmail.com">dyutiman2003@gmail.com</a></div>
+          <div class="c-item"><span>📞</span><a href="tel:+917397238605">+91 7397238605</a></div>
+          <div class="c-item"><span>💼</span><a href="https://linkedin.com/in/dyutiman-bharadwaj" target="_blank">linkedin.com/in/dyutiman-bharadwaj</a></div>
+          <div class="c-item"><span>🐙</span><a href="https://github.com/dyutimanbharadwaj" target="_blank">github.com/dyutimanbharadwaj</a></div>
+          <div class="c-item"><span>📍</span><span>Guwahati, Assam, India</span></div>
+        </div>
+
+        <form class="contact-form card-white reveal" id="contact-form">
+          <h3 class="contact-sub">Send a Message</h3>
+          <div class="form-grp">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" placeholder="Your name" required/>
+          </div>
+          <div class="form-grp">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" placeholder="your@email.com" required/>
+          </div>
+          <div class="form-grp">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" rows="4" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-green" style="width:100%">🚀 SEND_MESSAGE()</button>
+          <div class="form-ok" id="form-ok">✅ Message sent! I'll get back to you soon.</div>
+        </form>
+
+      </div>
+    </section>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-in">
+    <span>Built with ❤️ by <strong>Dyutiman Bharadwaj</strong></span>
+    <span class="footer-c">© 2026 All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
