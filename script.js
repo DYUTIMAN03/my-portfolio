@@ -127,7 +127,7 @@ const CMDS = {
 <div class="ol">✉  dyutiman2003@gmail.com</div>
 <div class="ol">📞 +91 7397238605</div>
 <div class="ol">💼 linkedin.com/in/dyutiman-bharadwaj</div>
-<div class="ol">🐙 github.com/dyutimanbharadwaj</div>`,
+<div class="ol">🐙 github.com/DYUTIMAN03</div>`,
 };
 
 function appendOut(html) {
@@ -255,11 +255,35 @@ if (canvas) {
 /* ══ CONTACT FORM ══ */
 const cForm = document.getElementById('contact-form');
 const formOk = document.getElementById('form-ok');
-cForm && cForm.addEventListener('submit', e => {
+const formErr = document.getElementById('form-err');
+const submitBtn = document.getElementById('submit-btn');
+
+cForm && cForm.addEventListener('submit', async (e) => {
   e.preventDefault();
-  formOk.classList.add('show');
-  cForm.reset();
-  setTimeout(() => formOk.classList.remove('show'), 5000);
+  
+  if (submitBtn) submitBtn.textContent = '⏳ SENDING...';
+  if (formErr) formErr.style.display = 'none';
+
+  const formData = new FormData(cForm);
+  
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    });
+    
+    if (response.ok) {
+      if (formOk) formOk.classList.add('show');
+      cForm.reset();
+      setTimeout(() => { if (formOk) formOk.classList.remove('show'); }, 5000);
+    } else {
+      throw new Error('Network response was not ok');
+    }
+  } catch (error) {
+    if (formErr) formErr.style.display = 'block';
+  } finally {
+    if (submitBtn) submitBtn.textContent = '🚀 SEND_MESSAGE()';
+  }
 });
 
 /* ══ RESUME BTN ══ */
